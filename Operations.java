@@ -95,4 +95,31 @@ public class Operations
 			System.out.println(arr[i]);
 		}
 	}
+	
+	
+	public void FindCountOfCharacter()
+	{
+		String str= "Hello Java";
+		int count=0;
+		char[] arr = str.toCharArray();
+		for(int i=0;i<arr.length;i=i+1)
+		{
+			if(arr[i]=='e')
+			{
+				count=count+1;
+			}
+		}
+		System.out.println(count);
+		
+	}
+	
+	public void CountCharacterUsingSplit()
+	{
+		String str="Hello Welcome";
+		 String[] arr = str.split("l");
+		 int count = arr.length-1;
+		 System.out.println(count);
+	}
+	
+	
 }
