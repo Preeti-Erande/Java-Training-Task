@@ -1,18 +1,13 @@
-package Constructor;
+package DynamicCollection;
 
 public class MainClass {
 
 	public static void main(String[] args) 
 	{
-		//ConstructorClass obj= new ConstructorClass(10, "Hi");
+		Collection obj=new Collection();
+		obj.DemoArrayList();
+		obj.Verify();
 		
-		//Variables obj=new Variables();
-		//obj.Print();
-		//obj.Method(32.66, "Welcome");
-		
-		ConstructorUse obj=new ConstructorUse(90, "Demo");
-		obj.Print();
-		obj.Add();
 
 	}
 
