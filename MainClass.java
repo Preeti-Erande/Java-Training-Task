@@ -1,12 +1,14 @@
-package DynamicCollection;
+package Inheritance;
 
 public class MainClass {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		Collection obj=new Collection();
-		obj.DemoArrayList();
-		obj.Verify();
+		//Car obj=new Car();
+		//obj.Accelerate();
+		//obj.Brake();
+		
+		Car obj=new Car(50);
 		
 
 	}
