@@ -1,15 +1,16 @@
-package Inheritance;
+package LogicalPrograms;
 
 public class MainClass {
 
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-		//Car obj=new Car();
-		//obj.Accelerate();
-		//obj.Brake();
-		
-		Car obj=new Car(50);
-		
+		LogicPractice obj= new LogicPractice();
+		//obj.PrintEvenNumber();
+		//obj.PrintOddNumbers();
+		//obj.PrintCountOf0();
+		//obj.VerifyPrime();
+		//obj.SortArrayAscending();
+		obj.ReverseString();
 
 	}
 
