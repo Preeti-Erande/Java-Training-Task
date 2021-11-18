@@ -1,22 +1,43 @@
-package Inheritance;
+package AccessModifiers;
 
-public class Vehicle 
+public class Vehicle // private, default, public
 {
-	public Vehicle(int b)
+	
+	public Vehicle() // private, default, protected, public
 	{
-		System.out.println("Vehicle Costructor");
-		System.out.println(b);
+		
 	}
 	
 	
-	public void Accelerate()
+	
+	
+	//private->default->protected->public
+	
+	
+	// Scope of private method is limited to the same class
+	private void PrivateMethod()
 	{
-		System.out.println("Vehicke Accelerate");
+		System.out.println("Inside private method");
 	}
 	
-	public void Brake()
+	public void CallPrivateMethod()
 	{
-		System.out.println("Vehicle Brake");
+		Vehicle obj=new Vehicle();
+		obj.PrivateMethod();
+	}
+	
+	//Scope will be in same class and inherited class
+	// Also scope of protected method is outside a package using this.
+	protected void ProtectedMethod()
+	{
+		System.out.println("Inside protected method");
+	}
+	
+	//scope of default method is limited only in the same package not outside the package
+	void DefaultMethod()
+	{
+		System.out.println("Inside default method");
+	}
 	}
 
-}
+

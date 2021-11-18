@@ -1,16 +1,15 @@
-package LogicalPrograms;
+package AccessModifiers;
 
 public class MainClass {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		LogicPractice obj= new LogicPractice();
-		//obj.PrintEvenNumber();
-		//obj.PrintOddNumbers();
-		//obj.PrintCountOf0();
-		//obj.VerifyPrime();
-		//obj.SortArrayAscending();
-		obj.ReverseString();
+		Vehicle obj=new Vehicle();
+		
+		Car obj1=new Car();
+		obj1.ProtectedMethod();
+		obj1.CallProtected();
+		
 
 	}
 
