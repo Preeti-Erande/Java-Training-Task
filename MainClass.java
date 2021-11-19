@@ -1,14 +1,12 @@
-package AccessModifiers;
+package Overriding;
 
 public class MainClass {
 
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-		Vehicle obj=new Vehicle();
-		
-		Car obj1=new Car();
-		obj1.ProtectedMethod();
-		obj1.CallProtected();
+		//Baseclass obj= new Childclass()
+		Vehicle obj=new Car();
+		obj.Wheel();
 		
 
 	}
