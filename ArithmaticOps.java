@@ -1,27 +1,40 @@
-package demo;
+package com.vstl;
 
 public class ArithmaticOps
 {
-	public void Add()
+	public void doAddition()
 	{
-		//variable, data type=int, variable name=a, value=10
+		//LocalVariables
+		int intNumber_1=20, intNumber_2=30;
+		int intTotal=intNumber_1+intNumber_2;
+		System.out.println("Addition is : "+intTotal);
 		
-		int a=10;
-		int b=20;
-		int c=a+b;
-		System.out.println(c);
+		System.out.println("***************************************");
+		
 	}
-	public void Sub()
+	// To make method more generic we declare Parameterized method
+	public void doSubstraction(double dblNumber_1,double dblNumber_2)
 	{
-		double d1= 44.90;
-		double d2=78.99;
-		double d3= d1-d2;
-		System.out.println(d3);
+		double dblTotal=dblNumber_1-dblNumber_2;
+		System.out.println("Substraction is : "+dblTotal);
+		System.out.println("***************************");
 	}
 	
-	public void ReadExcelFile()
+	// Method return type
+	public int doMultiplication( )
 	{
-		System.out.println("Read excel file");
+		int intNumber_A1=50, intNumber_A2=20;
+	
+		int intResult=intNumber_A1*intNumber_A2;
+		return intResult;
 	}
-
+	
+	public int Print(int intNumber)
+	{
+		return intNumber;
+	}
 }
+	
+
+
+
